@@ -5,10 +5,27 @@
 #define DATAMODEL_API
 #endif
 
+#include <windows.h>
+#include <iostream>
+#include <stdexcept>
+#include <fstream>
+#include <string>
+#include "CommDlg.h"
+#include "windows.h"
+
+
 
 class DataModel
 {
-public: 
-    void ReadFile();
-    void SaveFile();
+private:
+
+public:
+    //DataModel();
+    //~DataModel();
+
+    DATAMODEL_API void ReadFile(HWND hwnd, HWND edit_box); // get address of file
+    DATAMODEL_API void SaveFile();
+
+    // Read data from file and get object from it
+    DATAMODEL_API void GetObject();
 };

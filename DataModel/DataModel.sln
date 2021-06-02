@@ -5,8 +5,6 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "DataModel", "DataModel\Data
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "FileHandling", "..\FileHandling\FileHandling\FileHandling.vcxproj", "{E7A333FC-07B7-4383-A053-9F7F394C6718}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ObjectPainter", "..\ObjectPainter\W32T1.vcxproj", "{64E2EE17-B10D-4088-9632-15581B5F20AB}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -21,10 +19,6 @@ Global
 		{E7A333FC-07B7-4383-A053-9F7F394C6718}.Debug|Win32.Build.0 = Debug|Win32
 		{E7A333FC-07B7-4383-A053-9F7F394C6718}.Release|Win32.ActiveCfg = Release|Win32
 		{E7A333FC-07B7-4383-A053-9F7F394C6718}.Release|Win32.Build.0 = Release|Win32
-		{64E2EE17-B10D-4088-9632-15581B5F20AB}.Debug|Win32.ActiveCfg = Debug|Win32
-		{64E2EE17-B10D-4088-9632-15581B5F20AB}.Debug|Win32.Build.0 = Debug|Win32
-		{64E2EE17-B10D-4088-9632-15581B5F20AB}.Release|Win32.ActiveCfg = Release|Win32
-		{64E2EE17-B10D-4088-9632-15581B5F20AB}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

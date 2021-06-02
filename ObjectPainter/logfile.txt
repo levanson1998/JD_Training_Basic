@@ -1,10 +1,6 @@
-2021-06-02 00:37:41	LOGFILE FirstApp
+2021-06-02 17:32:50	LOGFILE FirstApp
 
-2021-06-02 00:37:41	Start file !! 
-2021-06-02 00:37:41	Start file 1 !! 
-2021-06-02 00:37:41	Start file 2 !! 
-2021-06-02 00:37:42	Load from file button is pushed !
-2021-06-02 00:37:43	Save button is pushed !
-2021-06-02 00:37:44	Exit button is pushed !
-2021-06-02 00:37:45	DestroyWindow !
-2021-06-02 00:37:45	PostQuitMessage !
+2021-06-02 17:32:50	Start file !! 
+2021-06-02 17:32:50	Start file 1 !! 
+2021-06-02 17:32:50	Start file 2 !! 
+2021-06-02 17:32:51	Load from file button is pushed !

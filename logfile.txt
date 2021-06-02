@@ -1,0 +1,38 @@
+2021-06-02 15:57:05	Exit button is pushed !
+2021-06-02 15:57:05	PostQuitMessage !
+2021-06-02 16:33:02	DestroyWindow !
+2021-06-02 16:33:02	PostQuitMessage !
+2021-06-02 16:33:54	DestroyWindow !
+2021-06-02 16:33:54	PostQuitMessage !
+2021-06-02 16:35:11	Apply button is pushed !
+2021-06-02 16:35:12	Exit button is pushed !
+2021-06-02 16:35:12	PostQuitMessage !
+2021-06-02 16:36:56	DestroyWindow !
+2021-06-02 16:36:56	PostQuitMessage !
+2021-06-02 16:41:54	Exit button is pushed !
+2021-06-02 16:41:54	PostQuitMessage !
+2021-06-02 16:47:09	Exit button is pushed !
+2021-06-02 16:47:09	PostQuitMessage !
+2021-06-02 16:55:05	DestroyWindow !
+2021-06-02 16:55:05	PostQuitMessage !
+2021-06-02 17:22:49	DestroyWindow !
+2021-06-02 17:22:49	PostQuitMessage !
+2021-06-02 17:23:34	DestroyWindow !
+2021-06-02 17:23:34	PostQuitMessage !
+2021-06-02 17:24:11	DestroyWindow !
+2021-06-02 17:24:11	PostQuitMessage !
+2021-06-02 17:25:01	Exit button is pushed !
+2021-06-02 17:25:01	PostQuitMessage !
+2021-06-02 17:25:15	Exit button is pushed !
+2021-06-02 17:25:15	PostQuitMessage !
+2021-06-02 17:26:21	DestroyWindow !
+2021-06-02 17:26:21	PostQuitMessage !
+2021-06-02 17:30:27	DestroyWindow !
+2021-06-02 17:30:27	PostQuitMessage !
+2021-06-02 17:30:53	Load from file button is pushed !
+2021-06-02 17:30:57	Apply button is pushed !
+2021-06-02 17:30:58	Load from file button is pushed !
+2021-06-02 17:31:17	DestroyWindow !
+2021-06-02 17:31:17	PostQuitMessage !
+2021-06-02 17:33:19	DestroyWindow !
+2021-06-02 17:33:19	PostQuitMessage !

@@ -1,7 +1,10 @@
+#include "stdafx.h"
 #include <time.h>
 #include <iostream>
 #include <fstream>
 #include <windows.h>
+#include "DataModel.h"
+#include "FileHandling.h"
 
 #define SAVE_BUTTON  123
 #define EXIT_BUTTON  124

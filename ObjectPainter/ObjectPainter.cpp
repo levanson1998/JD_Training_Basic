@@ -36,7 +36,7 @@ inline void Loginfo( const char* LogMsg)
 
 void DesignWindows(HWND hwnd)
 {
-    HICON hIcon, hIconSm;
+    HICON hIcon;
     
     // Create a logo for application
     hIcon = (HICON)LoadImage(NULL, "logo.ico", IMAGE_ICON, 32, 32, LR_LOADFROMFILE);
@@ -62,7 +62,7 @@ void DesignWindows(HWND hwnd)
         930, 530, 50, 25, hwnd, (HMENU)EXIT_BUTTON, NULL, NULL);
 
     // create edit area
-    edit_box = CreateWindowW(L"EDIT", NULL, WS_VISIBLE | WS_CHILD | WS_GROUP | WS_BORDER | ES_LEFT | ES_MULTILINE | ES_AUTOVSCROLL, \
+    edit_box = CreateWindowW(L"EDIT", NULL, WS_VISIBLE | WS_CHILD | WS_GROUP | WS_BORDER | ES_LEFT | ES_MULTILINE | ES_AUTOVSCROLL | ES_AUTOHSCROLL, \
         10, 10, 300, 510, hwnd, NULL, NULL, NULL);
 
     // create draw area
@@ -92,6 +92,7 @@ LRESULT CALLBACK WndProc(HWND hwnd, UINT msg, WPARAM wParam, LPARAM lParam)
 
             case EXIT_BUTTON:
                  Loginfo("Exit button is pushed !");
+                 DestroyWindow(hwnd);
             break;
 
             case APPLY_BUTTON:
@@ -100,6 +101,10 @@ LRESULT CALLBACK WndProc(HWND hwnd, UINT msg, WPARAM wParam, LPARAM lParam)
 
             case LFF_BUTTON:
                  Loginfo("Load from file button is pushed !");
+                 DataModel object_file;
+                 object_file.ReadFile(hwnd, edit_box);
+                 //DataModel::ReadFile(hwnd);
+                 //ReadFile(hwnd);
             break;
             }
         break;
@@ -121,6 +126,8 @@ LRESULT CALLBACK WndProc(HWND hwnd, UINT msg, WPARAM wParam, LPARAM lParam)
 int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance,
     LPSTR lpCmdLine, int nCmdShow)
 {
+    
+
     WNDCLASSEX wc;
     HWND hwnd;
     MSG Msg;
