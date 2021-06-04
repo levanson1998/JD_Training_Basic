@@ -1,38 +1,165 @@
-2021-06-02 15:57:05	Exit button is pushed !
-2021-06-02 15:57:05	PostQuitMessage !
-2021-06-02 16:33:02	DestroyWindow !
-2021-06-02 16:33:02	PostQuitMessage !
-2021-06-02 16:33:54	DestroyWindow !
-2021-06-02 16:33:54	PostQuitMessage !
-2021-06-02 16:35:11	Apply button is pushed !
-2021-06-02 16:35:12	Exit button is pushed !
-2021-06-02 16:35:12	PostQuitMessage !
-2021-06-02 16:36:56	DestroyWindow !
-2021-06-02 16:36:56	PostQuitMessage !
-2021-06-02 16:41:54	Exit button is pushed !
-2021-06-02 16:41:54	PostQuitMessage !
-2021-06-02 16:47:09	Exit button is pushed !
-2021-06-02 16:47:09	PostQuitMessage !
-2021-06-02 16:55:05	DestroyWindow !
-2021-06-02 16:55:05	PostQuitMessage !
-2021-06-02 17:22:49	DestroyWindow !
-2021-06-02 17:22:49	PostQuitMessage !
-2021-06-02 17:23:34	DestroyWindow !
-2021-06-02 17:23:34	PostQuitMessage !
-2021-06-02 17:24:11	DestroyWindow !
-2021-06-02 17:24:11	PostQuitMessage !
-2021-06-02 17:25:01	Exit button is pushed !
-2021-06-02 17:25:01	PostQuitMessage !
-2021-06-02 17:25:15	Exit button is pushed !
-2021-06-02 17:25:15	PostQuitMessage !
-2021-06-02 17:26:21	DestroyWindow !
-2021-06-02 17:26:21	PostQuitMessage !
-2021-06-02 17:30:27	DestroyWindow !
-2021-06-02 17:30:27	PostQuitMessage !
-2021-06-02 17:30:53	Load from file button is pushed !
-2021-06-02 17:30:57	Apply button is pushed !
-2021-06-02 17:30:58	Load from file button is pushed !
-2021-06-02 17:31:17	DestroyWindow !
-2021-06-02 17:31:17	PostQuitMessage !
-2021-06-02 17:33:19	DestroyWindow !
-2021-06-02 17:33:19	PostQuitMessage !
+2021-06-03 18:05:21	Save button is pushed !
+2021-06-03 18:05:24	Apply button is pushed !
+2021-06-03 18:05:28	Apply button is ok !
+2021-06-03 18:05:31	Exit button is pushed !
+2021-06-03 18:05:31	PostQuitMessage !
+2021-06-03 18:06:43	Apply button is pushed !
+2021-06-03 18:06:43	Apply button is ok !
+2021-06-03 18:06:45	Apply button is pushed !
+2021-06-03 18:06:45	Apply button is ok !
+2021-06-03 18:06:46	Exit button is pushed !
+2021-06-03 18:06:46	PostQuitMessage !
+2021-06-03 18:18:23	Apply button is pushed !
+2021-06-03 18:18:46	Apply button is ok !
+2021-06-03 18:18:48	Exit button is pushed !
+2021-06-03 18:18:48	PostQuitMessage !
+2021-06-03 18:19:11	Apply button is pushed !
+2021-06-03 18:19:11	Apply button is ok !
+2021-06-03 18:19:12	Apply button is pushed !
+2021-06-03 18:19:12	Apply button is ok !
+2021-06-03 18:19:12	Apply button is pushed !
+2021-06-03 18:19:12	Apply button is ok !
+2021-06-03 18:19:14	Save button is pushed !
+2021-06-03 18:19:16	Exit button is pushed !
+2021-06-03 18:19:16	PostQuitMessage !
+2021-06-03 18:19:39	Apply button is pushed !
+2021-06-03 18:19:39	Apply button is ok !
+2021-06-03 18:19:40	Exit button is pushed !
+2021-06-03 18:19:40	PostQuitMessage !
+2021-06-03 18:20:24	Apply button is pushed !
+2021-06-03 18:20:24	Apply button is ok !
+2021-06-03 18:20:25	Save button is pushed !
+2021-06-03 18:20:29	Load from file button is pushed !
+2021-06-03 18:20:32	Apply button is pushed !
+2021-06-03 18:20:32	Apply button is ok !
+2021-06-03 18:20:33	Save button is pushed !
+2021-06-03 18:20:38	Exit button is pushed !
+2021-06-03 18:20:38	PostQuitMessage !
+2021-06-03 22:39:36	Load from file button is pushed !
+2021-06-03 22:41:15	Save button is pushed !
+2021-06-03 22:41:24	Load from file button is pushed !
+2021-06-03 22:41:33	DestroyWindow !
+2021-06-03 22:41:33	PostQuitMessage !
+2021-06-03 22:42:24	Save button is pushed !
+2021-06-03 22:42:27	DestroyWindow !
+2021-06-03 22:42:28	PostQuitMessage !
+2021-06-03 22:43:48	Apply button is pushed !
+2021-06-03 22:43:48	Apply button is ok !
+2021-06-03 22:43:49	Apply button is pushed !
+2021-06-03 22:43:49	Apply button is ok !
+2021-06-03 22:43:50	Exit button is pushed !
+2021-06-03 22:43:50	PostQuitMessage !
+2021-06-03 22:45:10	Apply button is pushed !
+2021-06-03 22:45:12	Apply button is ok !
+2021-06-03 22:45:17	DestroyWindow !
+2021-06-03 22:45:17	PostQuitMessage !
+2021-06-03 23:42:36	Apply button is pushed !
+2021-06-03 23:45:23	Apply button is pushed !
+2021-06-03 23:47:51	Apply button is pushed !
+2021-06-03 23:48:28	Apply button is pushed !
+2021-06-03 23:50:48	Apply button is pushed !
+2021-06-03 23:50:49	Apply button is ok !
+2021-06-03 23:50:51	Apply button is pushed !
+2021-06-03 23:50:52	Apply button is ok !
+2021-06-03 23:50:55	Exit button is pushed !
+2021-06-03 23:50:55	PostQuitMessage !
+2021-06-03 23:59:49	Apply button is pushed !
+2021-06-04 09:45:36	Load from file button is pushed !
+2021-06-04 09:45:42	Load from file button is pushed !
+2021-06-04 09:45:49	Exit button is pushed !
+2021-06-04 09:45:49	PostQuitMessage !
+2021-06-04 09:53:10	Apply button is pushed !
+2021-06-04 10:10:30	Apply button is pushed !
+2021-06-04 10:55:59	Apply button is pushed !
+2021-06-04 10:57:40	Apply button is pushed !
+2021-06-04 11:00:45	Apply button is pushed !
+2021-06-04 11:03:28	Apply button is pushed !
+2021-06-04 11:06:26	Apply button is pushed !
+2021-06-04 11:09:02	Apply button is pushed !
+2021-06-04 11:15:04	Apply button is pushed !
+2021-06-04 11:21:43	Apply button is pushed !
+2021-06-04 11:23:20	Apply button is pushed !
+2021-06-04 11:24:08	Apply button is pushed !
+2021-06-04 11:24:38	Apply button is pushed !
+2021-06-04 11:25:25	Apply button is pushed !
+2021-06-04 11:26:28	Apply button is pushed !
+2021-06-04 11:27:15	Apply button is pushed !
+2021-06-04 11:28:02	Apply button is pushed !
+2021-06-04 11:31:13	Apply button is pushed !
+2021-06-04 11:32:05	Apply button is pushed !
+2021-06-04 11:43:02	Apply button is pushed !
+2021-06-04 11:43:44	Apply button is pushed !
+2021-06-04 12:09:20	Apply button is pushed !
+2021-06-04 12:12:25	Apply button is pushed !
+2021-06-04 12:13:15	Apply button is pushed !
+2021-06-04 13:35:46	Apply button is pushed !
+2021-06-04 13:35:46	Apply button is ok !
+2021-06-04 13:35:48	Apply button is pushed !
+2021-06-04 13:35:48	Apply button is ok !
+2021-06-04 13:35:51	Exit button is pushed !
+2021-06-04 13:35:51	PostQuitMessage !
+2021-06-04 13:36:26	Apply button is pushed !
+2021-06-04 13:36:27	Apply button is ok !
+2021-06-04 13:36:27	Exit button is pushed !
+2021-06-04 13:36:27	PostQuitMessage !
+2021-06-04 13:41:39	Apply button is pushed !
+2021-06-04 13:42:17	Apply button is ok !
+2021-06-04 13:42:17	Exit button is pushed !
+2021-06-04 13:42:17	PostQuitMessage !
+2021-06-04 13:42:30	Apply button is pushed !
+2021-06-04 13:42:50	Apply button is ok !
+2021-06-04 13:42:53	Exit button is pushed !
+2021-06-04 13:42:53	PostQuitMessage !
+2021-06-04 13:43:05	Apply button is pushed !
+2021-06-04 13:43:23	Apply button is ok !
+2021-06-04 13:43:31	Exit button is pushed !
+2021-06-04 13:43:31	PostQuitMessage !
+2021-06-04 14:05:02	Apply button is pushed !
+2021-06-04 14:05:32	Apply button is pushed !
+2021-06-04 14:06:22	Apply button is ok !
+2021-06-04 14:06:23	Exit button is pushed !
+2021-06-04 14:06:23	PostQuitMessage !
+2021-06-04 14:06:39	Apply button is pushed !
+2021-06-04 14:08:30	Apply button is pushed !
+2021-06-04 14:09:53	Apply button is ok !
+2021-06-04 14:09:54	Exit button is pushed !
+2021-06-04 14:09:54	PostQuitMessage !
+2021-06-04 14:12:09	Apply button is pushed !
+2021-06-04 14:14:49	Apply button is pushed !
+2021-06-04 14:17:07	Apply button is ok !
+2021-06-04 14:17:17	Apply button is pushed !
+2021-06-04 14:17:49	Apply button is ok !
+2021-06-04 14:17:50	Exit button is pushed !
+2021-06-04 14:17:50	PostQuitMessage !
+2021-06-04 14:18:09	Apply button is pushed !
+2021-06-04 14:19:16	Apply button is pushed !
+2021-06-04 14:19:49	Apply button is ok !
+2021-06-04 14:19:50	Exit button is pushed !
+2021-06-04 14:19:50	PostQuitMessage !
+2021-06-04 16:09:11	Apply button is pushed !
+2021-06-04 16:09:12	Apply button is ok !
+2021-06-04 16:09:14	Apply button is pushed !
+2021-06-04 16:09:15	Apply button is ok !
+2021-06-04 16:09:18	Apply button is pushed !
+2021-06-04 16:09:19	Apply button is ok !
+2021-06-04 16:09:20	Apply button is pushed !
+2021-06-04 16:09:22	Apply button is ok !
+2021-06-04 16:09:23	Exit button is pushed !
+2021-06-04 16:09:23	PostQuitMessage !
+2021-06-04 17:29:06	Load from file button is pushed !
+2021-06-04 17:29:24	Apply button is pushed !
+2021-06-04 17:29:25	Apply button is ok !
+2021-06-04 17:29:25	Apply button is pushed !
+2021-06-04 17:29:26	Apply button is ok !
+2021-06-04 17:29:27	Save button is pushed !
+2021-06-04 17:29:30	DestroyWindow !
+2021-06-04 17:29:30	PostQuitMessage !
+2021-06-04 20:24:05	Apply button is pushed !
+2021-06-04 20:24:06	Apply button is ok !
+2021-06-04 20:24:09	Apply button is pushed !
+2021-06-04 20:24:10	Apply button is ok !
+2021-06-04 20:24:12	Apply button is pushed !
+2021-06-04 20:24:13	Apply button is ok !
+2021-06-04 20:24:14	Save button is pushed !
+2021-06-04 20:24:19	Exit button is pushed !
+2021-06-04 20:24:19	PostQuitMessage !

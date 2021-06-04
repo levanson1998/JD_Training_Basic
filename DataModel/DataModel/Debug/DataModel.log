@@ -1,18 +1,17 @@
-﻿Build started 6/2/2021 5:30:41 PM.
-     1>Project "E:\LeVanSon\training JetDrive\Win32\Win32Exc\DataModel\DataModel\DataModel.vcxproj" on node 2 (rebuild target(s)).
-     1>_PrepareForClean:
-         Deleting file "Debug\DataModel.lastbuildstate".
-       InitializeBuildStatus:
+﻿Build started 6/4/2021 8:23:48 PM.
+     1>Project "E:\LeVanSon\training JetDrive\Win32\Win32Exc\DataModel\DataModel\DataModel.vcxproj" on node 2 (build target(s)).
+     1>InitializeBuildStatus:
          Creating "Debug\DataModel.unsuccessfulbuild" because "AlwaysCreate" was specified.
        ClCompile:
-         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _WINDOWS /D _USRDLL /D DATAMODEL_EXPORTS /D _WINDLL /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yc"StdAfx.h" /Fp"Debug\DataModel.pch" /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt stdafx.cpp
-         stdafx.cpp
+         All outputs are up-to-date.
          C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _WINDOWS /D _USRDLL /D DATAMODEL_EXPORTS /D _WINDLL /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yu"StdAfx.h" /Fp"Debug\DataModel.pch" /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt DataModel.cpp
          DataModel.cpp
-         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _WINDOWS /D _USRDLL /D DATAMODEL_EXPORTS /D _WINDLL /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt dllmain.cpp
-         dllmain.cpp
+     1>e:\levanson\training jetdrive\win32\win32exc\datamodel\datamodel\datamodel.cpp(78): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\string.h(188) : see declaration of 'strncpy'
+     1>e:\levanson\training jetdrive\win32\win32exc\datamodel\datamodel\datamodel.cpp(95): warning C4018: '<' : signed/unsigned mismatch
+         All outputs are up-to-date.
        ManifestResourceCompile:
-         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\rc.exe /nologo /fo"Debug\DataModel.dll.embed.manifest.res" Debug\DataModel_manifest.rc 
+         All outputs are up-to-date.
        Link:
          C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"E:\LeVanSon\training JetDrive\Win32\Win32Exc\ObjectPainter\Debug\DataModel.dll" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Debug\DataModel.dll.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"E:\LeVanSon\training JetDrive\Win32\Win32Exc\ObjectPainter\Debug\DataModel.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"E:\LeVanSon\training JetDrive\Win32\Win32Exc\ObjectPainter\Debug\DataModel.lib" /MACHINE:X86 /DLL Debug\DataModel.dll.embed.manifest.res
          Debug\DataModel.obj
@@ -20,21 +19,16 @@
          Debug\stdafx.obj
             Creating library E:\LeVanSon\training JetDrive\Win32\Win32Exc\ObjectPainter\Debug\DataModel.lib and object E:\LeVanSon\training JetDrive\Win32\Win32Exc\ObjectPainter\Debug\DataModel.exp
        Manifest:
-         Deleting file "Debug\DataModel.dll.embed.manifest".
          C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /out:"Debug\DataModel.dll.embed.manifest" /manifest Debug\DataModel.dll.intermediate.manifest
-         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\rc.exe /nologo /fo"Debug\DataModel.dll.embed.manifest.res" Debug\DataModel_manifest.rc 
+         All outputs are up-to-date.
        LinkEmbedManifest:
-         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"E:\LeVanSon\training JetDrive\Win32\Win32Exc\ObjectPainter\Debug\DataModel.dll" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Debug\DataModel.dll.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"E:\LeVanSon\training JetDrive\Win32\Win32Exc\ObjectPainter\Debug\DataModel.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"E:\LeVanSon\training JetDrive\Win32\Win32Exc\ObjectPainter\Debug\DataModel.lib" /MACHINE:X86 /DLL Debug\DataModel.dll.embed.manifest.res
-         Debug\DataModel.obj
-         Debug\dllmain.obj
-         Debug\stdafx.obj
-            Creating library E:\LeVanSon\training JetDrive\Win32\Win32Exc\ObjectPainter\Debug\DataModel.lib and object E:\LeVanSon\training JetDrive\Win32\Win32Exc\ObjectPainter\Debug\DataModel.exp
+         All outputs are up-to-date.
          DataModel.vcxproj -> E:\LeVanSon\training JetDrive\Win32\Win32Exc\ObjectPainter\Debug\DataModel.dll
        FinalizeBuildStatus:
          Deleting file "Debug\DataModel.unsuccessfulbuild".
          Touching "Debug\DataModel.lastbuildstate".
-     1>Done Building Project "E:\LeVanSon\training JetDrive\Win32\Win32Exc\DataModel\DataModel\DataModel.vcxproj" (rebuild target(s)).
+     1>Done Building Project "E:\LeVanSon\training JetDrive\Win32\Win32Exc\DataModel\DataModel\DataModel.vcxproj" (build target(s)).
 
 Build succeeded.
 
-Time Elapsed 00:00:03.03
+Time Elapsed 00:00:02.32

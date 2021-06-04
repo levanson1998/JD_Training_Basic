@@ -7,13 +7,18 @@
 // Create a font for edit box, 
 HFONT font=CreateFont(20,0,0,0,FW_NORMAL,0,0,0,DEFAULT_CHARSET,OUT_DEFAULT_PRECIS,CLIP_DEFAULT_PRECIS,DEFAULT_QUALITY,FF_DONTCARE,"Courier New");
 
+FileHandling file_data;
+DataModel objects;
+
+int test = 0;
+
 /*
 * Loginfo, Log message will append to logfile.txt file
 * Y-m-d h:m:s  Messages
 */
 inline void Loginfo( const char* LogMsg)
 {
-    static bool one_time = true;
+    static bool one_time = TRUE;
     std::ofstream log_file;
 
     time_t now = time(0);
@@ -22,9 +27,9 @@ inline void Loginfo( const char* LogMsg)
     tstruct = *localtime(&now);
     strftime(buf, sizeof(buf), "%Y-%m-%d %X", &tstruct);
 
-    if(one_time == true)
+    if(one_time == TRUE)
     {
-        one_time = false;
+        one_time = FALSE;
         log_file.open(LOGFILE, std::ofstream::out | std::ofstream::trunc); // clear file
         log_file << buf << "\t" << "LOGFILE FirstApp" << std::endl << std::endl;
         log_file.close();
@@ -32,6 +37,7 @@ inline void Loginfo( const char* LogMsg)
     
     log_file.open(LOGFILE, std::ofstream::out | std::ofstream::app);
     log_file << buf << "\t" << LogMsg << std::endl;
+    log_file.close();
 }
 
 void DesignWindows(HWND hwnd)
@@ -62,7 +68,7 @@ void DesignWindows(HWND hwnd)
         930, 530, 50, 25, hwnd, (HMENU)EXIT_BUTTON, NULL, NULL);
 
     // create edit area
-    edit_box = CreateWindowW(L"EDIT", NULL, WS_VISIBLE | WS_CHILD | WS_GROUP | WS_BORDER | ES_LEFT | ES_MULTILINE | ES_AUTOVSCROLL | ES_AUTOHSCROLL, \
+    edit_box = CreateWindowW(L"EDIT", NULL, WS_VISIBLE | WS_CHILD | WS_GROUP | WS_BORDER | ES_LEFT | ES_MULTILINE | ES_AUTOVSCROLL, \
         10, 10, 300, 510, hwnd, NULL, NULL, NULL);
 
     // create draw area
@@ -88,6 +94,8 @@ LRESULT CALLBACK WndProc(HWND hwnd, UINT msg, WPARAM wParam, LPARAM lParam)
             {
             case SAVE_BUTTON:
                 Loginfo("Save button is pushed !");
+                //DataModel object_file1;
+                file_data.SaveFile(hwnd, edit_box);
             break;
 
             case EXIT_BUTTON:
@@ -97,14 +105,26 @@ LRESULT CALLBACK WndProc(HWND hwnd, UINT msg, WPARAM wParam, LPARAM lParam)
 
             case APPLY_BUTTON:
                  Loginfo("Apply button is pushed !");
+                 //DataModel object_file2;
+                 try
+                 {
+                      objects.GetObjects(hwnd, edit_box);
+                 }
+                 catch(const char *ex)
+                 {
+                       MessageBox(hwnd, ex, "Error", MB_OK | MB_ICONERROR);
+                 }
+                 Loginfo("Apply button is ok !");
             break;
 
             case LFF_BUTTON:
+                test ++;
                  Loginfo("Load from file button is pushed !");
-                 DataModel object_file;
-                 object_file.ReadFile(hwnd, edit_box);
-                 //DataModel::ReadFile(hwnd);
-                 //ReadFile(hwnd);
+                 //DataModel object_file;
+
+                    file_data.ReadFile(hwnd, edit_box);
+
+
             break;
             }
         break;
@@ -145,12 +165,9 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance,
     wc.lpszClassName = g_szClassName;
     wc.hIconSm       = LoadIcon(NULL, IDI_APPLICATION);
 
-    //Loginfo("");
-    Loginfo("Start file !! ");
+    Loginfo("");
+    Loginfo("Begin");
 
-    Loginfo("Start file 1 !! ");
-
-    Loginfo("Start file 2 !! ");
 
     if(!RegisterClassEx(&wc))
     {
@@ -163,7 +180,7 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance,
         g_szClassName,
         "Object Painter",
         WS_OVERLAPPED | WS_CAPTION | WS_SYSMENU | WS_MINIMIZEBOX ,
-        CW_USEDEFAULT, CW_USEDEFAULT, 1000, 600,
+        50, 50, 1000, 600,
         NULL, NULL, hInstance, NULL);
 
     //hwnd = CreateWindow(TEXT("STATIC"), NULL, WS_DLGFRAME | WS_VISIBLE | WS_CHILD, 100, 100, 100, 200, NULL, NULL, hInstance, NULL);

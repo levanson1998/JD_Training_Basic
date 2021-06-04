@@ -4,46 +4,65 @@
 #include "stdafx.h"
 #include "DataModel.h"
 
-void DataModel::ReadFile(HWND hwnd, HWND edit_box)
+
+std::vector<char*> DataModel::GetObjects(HWND hwnd, HWND edit_box)
 {
-    OPENFILENAME ofn;
-    ZeroMemory(&ofn, sizeof(ofn));
-    char szFile[MAX_PATH] = "";
-
-    ofn.lStructSize = sizeof(ofn);
-    ofn.hwndOwner = hwnd;
-    ofn.lpstrFilter = "Text Files (*.txt)\0*.txt\0All Files (*.*)\0*.*\0";
-    ofn.lpstrFile = szFile;
-    ofn.nMaxFile = MAX_PATH;
-    ofn.Flags = OFN_EXPLORER | OFN_FILEMUSTEXIST | OFN_HIDEREADONLY;
-    ofn.lpstrDefExt = "txt";
-
-    if(GetOpenFileName(&ofn))
+    std::size_t len = GetWindowTextLength(edit_box);
+    char* text = new char[len];
+    GetWindowTextA(edit_box, text, len);
+    if(len == 0)
     {
-        std::fstream file_data;
-        std::string text;
-        file_data.open(szFile, std::ios_base::in);
+        throw "data is empty !";
+    }
 
-        if(file_data.is_open())
-        {
-            std::string text2box = "";
+    char* end = text + len - 1;
+    char* start = text;
+    char * position;
+    int len_obj = 0;
+
+    std::vector<char*> data_object(0);
+
+    position  = std::find(start, end, '[');
+    if(position == end)
+    {
+        //throw std::runtime_error("No any object in data ");
+        throw "No any object in data";
+    }
+    int i = 0;
+    do
+    {
+        i++;
+        std::size_t size;
+        size = len;
+        start = position;
+        position  = std::find(position + 1, end, '[');
+
+        len_obj = position - start;
             
-            while(getline(file_data, text))
-            {
-                text2box.append(text).append("\r\n");
-            }
-            SetWindowTextA(edit_box, text2box.c_str());
-            file_data.close();
-        }
-    }
-    else
-    {
-        MessageBox(hwnd, "Could not open file", "Error", MB_OK | MB_ICONERROR);
-    }
+        data_object.resize(i);
+
+        data_object[i-1] = new char[len_obj + 1];
+        std::strncpy(data_object[i-1], start, len_obj);
+
+    } while(position != end);
+    //MessageBox(hwnd, "get object !", "Notify", MB_OK | MB_ICONINFORMATION); /// delete after
+
+    delete text;
+    return data_object;
 }
 
-void DataModel::SaveFile()
+void DataModel::ClassObjects(HWND hwnd, std::vector<char*> obj)
 {
 
+}
+
+std::string DataModel::CharArray2String(char* a, std::size_t &len)
+{
+    std::string str = "";
+    for(int i = 0; i < len; i++)
+    {
+        str += *(a+i);
+    }
+    return str;
 }
 

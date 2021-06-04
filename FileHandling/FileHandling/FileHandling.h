@@ -6,32 +6,22 @@
 #endif
 
 #include "array"
+#include <windows.h>
+#include <iostream>
+#include <stdexcept>
+#include <fstream>
+#include <string>
+#include <vector>
+#include "CommDlg.h" // for OPENFILENAME
+#include "windows.h"
+//#include <iostream>
+#include <algorithm>
 
-struct rectangle
-{
-    std::array<double, 2> xy1;
-    std::array<double, 2> xy2;
-    std::array<double, 2> xy3;
-    std::array<double, 2> xy4;
-};
-
-struct line
-{
-    std::array<double, 2> xy1;
-    std::array<double, 2> xy2;
-};
-
-struct circle
-{
-    std::array<double, 2> o;
-    double r;
-};
 
 class FileHandling
 {
 public:
-    static FILEHANDLING_API double Doublex2(double a);
-    void ProcRectangle();
-    void ProcLine();
-    void ProcCircle();
+
+    FILEHANDLING_API void ReadFile(HWND hwnd, HWND edit_box); // get address of file
+    FILEHANDLING_API void SaveFile(HWND hwnd, HWND edit_box);
 };
