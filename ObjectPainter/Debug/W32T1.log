@@ -1,4 +1,4 @@
-﻿Build started 6/4/2021 8:23:57 PM.
+﻿Build started 6/5/2021 5:21:13 PM.
      1>Project "E:\LeVanSon\training JetDrive\Win32\Win32Exc\ObjectPainter\W32T1.vcxproj" on node 2 (build target(s)).
      1>InitializeBuildStatus:
          Creating "Debug\ObjectPainter.unsuccessfulbuild" because "AlwaysCreate" was specified.
@@ -30,4 +30,4 @@
 
 Build succeeded.
 
-Time Elapsed 00:00:01.94
+Time Elapsed 00:00:01.73

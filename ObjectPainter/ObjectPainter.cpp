@@ -72,12 +72,12 @@ void DesignWindows(HWND hwnd)
         10, 10, 300, 510, hwnd, NULL, NULL, NULL);
 
     // create draw area
-    CreateWindowW(L"STATIC", NULL, WS_VISIBLE | WS_CHILD | WS_GROUP | WS_BORDER , \
+    static_control = CreateWindowW(L"STATIC", NULL, WS_VISIBLE | WS_CHILD | WS_GROUP | WS_BORDER , \
         320, 10, 660, 510, hwnd, NULL, NULL, NULL);
 
     // send WM_SETFONT with font
-    SendMessage(edit_box,WM_SETFONT,(WPARAM)font,MAKELPARAM(true,0));
-    SendMessage(save_button,BM_SETSTYLE,(WPARAM)BS_PUSHBUTTON, TRUE);
+    SendMessage(edit_box, WM_SETFONT,(WPARAM)font,MAKELPARAM(true,0));
+    SendMessage(save_button, BM_SETSTYLE,(WPARAM)BS_PUSHBUTTON, TRUE);
 }
 
 
@@ -108,7 +108,9 @@ LRESULT CALLBACK WndProc(HWND hwnd, UINT msg, WPARAM wParam, LPARAM lParam)
                  //DataModel object_file2;
                  try
                  {
+                     
                       objects.GetObjects(hwnd, edit_box);
+                      SendMessage(hwnd, WM_COMMAND, SCM_PAINT, NULL);
                  }
                  catch(const char *ex)
                  {
@@ -119,12 +121,26 @@ LRESULT CALLBACK WndProc(HWND hwnd, UINT msg, WPARAM wParam, LPARAM lParam)
 
             case LFF_BUTTON:
                 test ++;
-                 Loginfo("Load from file button is pushed !");
-                 //DataModel object_file;
+                Loginfo("Load from file button is pushed !");
+                //DataModel object_file;
 
-                    file_data.ReadFile(hwnd, edit_box);
+                file_data.ReadFile(hwnd, edit_box);
+            break;
 
+            case SCM_PAINT:
+                 try
+                 {
+                     PAINTSTRUCT ps;
+                     HDC hdc = BeginPaint(static_control, &ps); 
+                     SetBkColor(hdc, RGB(255,255,255));
+                     objects.PaintObject(hdc, static_control);
 
+                     EndPaint(hwnd, &ps);
+                 }
+                 catch(const char *ex)
+                 {
+                       MessageBox(hwnd, ex, "Error", MB_OK | MB_ICONERROR);
+                 }
             break;
             }
         break;

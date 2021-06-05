@@ -1,7 +1,7 @@
-﻿Build started 6/4/2021 8:23:53 PM.
+﻿Build started 6/5/2021 4:36:01 PM.
      1>Project "E:\LeVanSon\training JetDrive\Win32\Win32Exc\FileHandling\FileHandling\FileHandling.vcxproj" on node 2 (build target(s)).
      1>InitializeBuildStatus:
-         Creating "Debug\FileHandling.unsuccessfulbuild" because "AlwaysCreate" was specified.
+         Touching "Debug\FileHandling.unsuccessfulbuild".
        ClCompile:
          All outputs are up-to-date.
          All outputs are up-to-date.
@@ -14,7 +14,6 @@
          Debug\dllmain.obj
          Debug\FileHandling.obj
          Debug\stdafx.obj
-            Creating library E:\LeVanSon\training JetDrive\Win32\Win32Exc\ObjectPainter\Debug\FileHandling.lib and object E:\LeVanSon\training JetDrive\Win32\Win32Exc\ObjectPainter\Debug\FileHandling.exp
        Manifest:
          C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /out:"Debug\FileHandling.dll.embed.manifest" /manifest Debug\FileHandling.dll.intermediate.manifest
          All outputs are up-to-date.
@@ -28,4 +27,4 @@
 
 Build succeeded.
 
-Time Elapsed 00:00:01.54
+Time Elapsed 00:00:01.30

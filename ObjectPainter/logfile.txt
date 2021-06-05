@@ -1,5 +1,5 @@
-2021-06-04 20:24:00	LOGFILE FirstApp
+2021-06-05 17:21:16	LOGFILE FirstApp
 
-2021-06-04 20:24:00	
-2021-06-04 20:24:00	Begin
-2021-06-04 20:24:01	Load from file button is pushed !
+2021-06-05 17:21:16	
+2021-06-05 17:21:16	Begin
+2021-06-05 17:21:17	Load from file button is pushed !

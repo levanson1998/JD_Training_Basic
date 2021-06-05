@@ -17,6 +17,7 @@
 //#include <iostream>
 #include <algorithm>
 
+#include "winbase.h"
 
 class FileHandling
 {

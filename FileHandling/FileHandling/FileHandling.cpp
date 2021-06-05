@@ -15,7 +15,7 @@ void FileHandling::ReadFile(HWND hwnd, HWND edit_box)
 
     ofn.lStructSize = sizeof(ofn);
     ofn.hwndOwner = hwnd;
-    ofn.lpstrFilter = "Text Files (*.txt)\0*.txt\0All Files (*.*)\0*.*\0";
+    ofn.lpstrFilter = "Ini Files (*.ini)\0*.ini\0All Files (*.*)\0*.*\0";
     ofn.lpstrFile = szFile;
     ofn.nMaxFile = MAX_PATH;
     ofn.Flags = OFN_EXPLORER | OFN_FILEMUSTEXIST | OFN_HIDEREADONLY;
@@ -54,7 +54,7 @@ void FileHandling::SaveFile(HWND hwnd, HWND edit_box)
 
     ofn.lStructSize = sizeof(ofn);
     ofn.hwndOwner = hwnd;
-    ofn.lpstrFilter = "Text Files (*.txt)\0*.txt\0All Files (*.*)\0*.*\0";
+    ofn.lpstrFilter = "Ini Files (*.ini)\0*.ini\0All Files (*.*)\0*.*\0";
     ofn.lpstrFile = szFile;
     ofn.nMaxFile = MAX_PATH;
     ofn.Flags = OFN_EXPLORER | OFN_FILEMUSTEXIST | OFN_HIDEREADONLY | OFN_OVERWRITEPROMPT;
@@ -77,3 +77,35 @@ void FileHandling::SaveFile(HWND hwnd, HWND edit_box)
         delete text;
     }
 }
+
+
+
+//void FileHandling::ReadFile(HWND hwnd, HWND edit_box)
+//{
+//    OPENFILENAME ofn;
+//    ZeroMemory(&ofn, sizeof(ofn));
+//    char szFile[MAX_PATH] = "";
+//
+//    ofn.lStructSize = sizeof(ofn);
+//    ofn.hwndOwner = hwnd;
+//    ofn.lpstrFilter = "Ini Files (*.ini)\0*.ini\0All Files (*.*)\0*.*\0";
+//    ofn.lpstrFile = szFile;
+//    ofn.nMaxFile = MAX_PATH;
+//    ofn.Flags = OFN_EXPLORER | OFN_FILEMUSTEXIST | OFN_HIDEREADONLY;
+//    ofn.lpstrDefExt = "ini";
+//
+//    
+//    if(GetOpenFileName(&ofn))
+//    {
+//        TCHAR data[100];
+//        std::size_t len = GetPrivateProfileString(NULL, NULL, "", data, 100, szFile);
+//        SetWindowTextA(edit_box, data);
+//    }
+//
+//    
+//}
+//
+//void FileHandling::SaveFile(HWND hwnd, HWND edit_box)
+//{
+//
+//}
